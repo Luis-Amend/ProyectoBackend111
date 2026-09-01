@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "hleUxQagZaxw6vGkPr1WExamA5hQUvPGXHpwzErtQnA=",
+  "Source": "ApiPedido",
+  "BasePath": "_content/ApiPedido",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
