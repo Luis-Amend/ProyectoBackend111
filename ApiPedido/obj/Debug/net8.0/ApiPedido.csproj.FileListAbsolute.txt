@@ -778,3 +778,4 @@ C:\Users\LENOVO\OneDrive\Desktop\ProyectoBackend\ApiPedido\obj\Debug\net8.0\refi
 C:\Users\LENOVO\OneDrive\Desktop\ProyectoBackend\ApiPedido\obj\Debug\net8.0\ApiPedido.pdb
 C:\Users\LENOVO\OneDrive\Desktop\ProyectoBackend\ApiPedido\obj\Debug\net8.0\ApiPedido.genruntimeconfig.cache
 C:\Users\LENOVO\OneDrive\Desktop\ProyectoBackend\ApiPedido\obj\Debug\net8.0\ref\ApiPedido.dll
+C:\Users\LENOVO\OneDrive\Desktop\ProyectoBackend\ApiPedido\obj\Debug\net8.0\ApiPedido.sourcelink.json
