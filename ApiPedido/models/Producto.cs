@@ -19,9 +19,9 @@ public class Producto
 
     public int Stock { get; set; }
 
-    public virtual Categoria Categoria{ get; set; }
+    public virtual Categoria? Categoria{ get; set; }
 
-    public ICollection<DetallePedido> DetallePedidos { get; set; }
+    public ICollection<DetallePedido>? DetallePedidos { get; set; }
 
 
 

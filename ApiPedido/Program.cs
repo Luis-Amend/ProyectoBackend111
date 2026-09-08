@@ -12,6 +12,24 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 // Add services to the container.
 
+builder.Services.AddCors(options =>
+
+{
+
+    options.AddPolicy("AllowAll", policy =>
+
+    {
+
+        policy.AllowAnyOrigin()
+
+              .AllowAnyMethod()
+
+              .AllowAnyHeader();
+
+    });
+
+});
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -28,6 +46,8 @@ var app = builder.Build();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseCors("AllowAll");
 
 app.MapControllers();
 
