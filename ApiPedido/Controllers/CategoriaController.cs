@@ -29,7 +29,7 @@ namespace ApiPedidos.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> CrearCategoria([FromBody] Categoria categoria)
+        public async Task<IActionResult> crearCategoria([FromBody] Categoria categoria)
         {
             var nombreMayuscula = categoria.Nombre?.Trim().ToUpper();
 
