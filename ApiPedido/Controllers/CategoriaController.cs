@@ -29,7 +29,7 @@ namespace ApiPedidos.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> crearCategoria([FromBody] Categoria categoria)
+        public async Task<IActionResult> CrearCategoria([FromBody] Categoria categoria)
         {
             var nombreMayuscula = categoria.Nombre?.Trim().ToUpper();
 
@@ -94,5 +94,22 @@ namespace ApiPedidos.Controllers
             return NoContent();
 
         }
+        
+        [HttpGet("{categoriaID}")]
+        public async Task<IActionResult> ObtenerCategoria(int categoriaID)
+        {
+            var categoria = await _context.Categorias.FirstOrDefaultAsync(c => c.CategoriaID == categoriaID);
+
+            if (categoria == null)
+            {
+                return NotFound("Categoria no encontrada");
+            }
+
+            return Ok(categoria);
+          
+        }
     }
+
+       
+    
 }

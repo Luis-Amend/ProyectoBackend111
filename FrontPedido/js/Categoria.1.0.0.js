@@ -48,25 +48,26 @@ function mostrarCategoria(data) {
 
 
 
-function AgregarCategoria() {
-  var nuevaCategoria = {
-    nombre: document.getElementById("nombreCategoria").value,
-  };
-
-  fetch("http://localhost:5049/api/Categoria", {
-    method: "POST",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(nuevaCategoria),
-  })
-    .then((respuesta) => respuesta.json())
-    .then((data) => {
-      document.getElementById("nombreCategoria").value = "";
-      ObtenerCategoria();
-    });
+function AgregarCategoria(){
+    var nuevaCategoria = {
+        nombre: document.getElementById("nombreCategoria").value,
+    };
+        fetch("http://localhost:5049/api/Categoria",
+            {
+                method: "POST",
+                headers: {
+                    Accept: "application/json",
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(nuevaCategoria),
+            })
+            .then((respuesta) => respuesta.json())
+            .then((data) => {
+                document.getElementById("nombreCategoria").value = "";
+                ObtenerCategoria();
+            });
 }
+
 
 
 
